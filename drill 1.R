@@ -80,3 +80,8 @@ fruit_box <- ggplot(
     y = "FV intake (g/day)",
     color = "Intake category"
   )
+
+# save plots
+ggsave("Average FV intake by gender.png", fruit_gender, dpi = 300)
+ggsave("baseline FV distribution.png", fruit_distr, dpi = 300)
+ggsave("FV intake cat for all ppts.png", fruit_box, dpi = 300)
