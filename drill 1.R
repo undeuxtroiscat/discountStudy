@@ -74,6 +74,7 @@ fruit_box <- ggplot(
   aes(x = fv_pre_cat, y = fv_pre, color = fv_pre_cat)
 ) +
   geom_boxplot() +
+  geom_jitter(width = 0.2, alpha = 0.5)
   labs(
     title = "Comparing baseline FV intake categories among \nstudy participants",
     x = NULL,
