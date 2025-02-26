@@ -21,7 +21,7 @@ dat <- df |>
   # select relevant variables
   select(age, gender, fv_pre) |>
   # filter age 18 - 65
-  filter(age >= 18 | age <= 65) |>
+  filter(age >= 18 & age <= 65) |>
   # move age to front
   relocate(age) |> 
   # create new var to account for categories of daily f/v intake
